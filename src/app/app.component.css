@@ -1,0 +1,29 @@
+.square-container {
+    display: flex;
+    margin: 0 0 10px 0;
+    ;
+}
+
+.square-box {
+    margin: 0 10px;
+    width: 100px;
+    height: 100px;
+    border: 1px solid lightgrey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    /* ✅ Professional subtle box shadow */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+
+    /* Optional: add hover interaction */
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.main-content {
+    /* border: 0.5px solid lightgray; */
+    padding: 30px 0px;
+}
