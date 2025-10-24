@@ -8,5 +8,9 @@ export const routes: Routes = [
     {
         path: 'directive',
         loadComponent: () => import('./directive/customdirective/customdirective.component').then(m => m.CustomdirectiveComponent)
+    },
+    {
+        path: 'template-form',
+        loadComponent: () => import('./form/form.component').then(m => m.FormComponent)
     }
 ];

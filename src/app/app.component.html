@@ -1,8 +1,9 @@
-<div *ngIf="isShowList" class="square-container">
+<!-- <div *ngIf="isShowList" class="square-container">
     <div class="square-box" *ngFor="let data of topics" (click)="redirectToTopic(data)">
         {{ data.topic }}
     </div>
 </div>
-<div [ngClass]="{ 'main-content': !isShowList }">
-    <router-outlet />
-</div>
+<button *ngIf="!isShowList" class="btn btn-primary back-button" (click)="redirectToBack()">Back</button>
+<div [ngClass]="{ 'main-content': !isShowList }"> -->
+<router-outlet />
+<!-- </div> -->

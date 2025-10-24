@@ -1,0 +1,13 @@
+<form #loginForm="ngForm" (ngSubmit)="loginUser(loginForm)" style="padding: 50px;">
+    <div>
+        <input type="text" name="name" placeholder="Enter name" class="form-control" ngModel />
+    </div>
+    <br>
+    <div>
+        <input type="password" name="password" placeholder="Enter password" class="form-control" ngModel />
+    </div>
+    <br>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<button class="btn btn-secondary ms-5" (click)="loginUser(loginForm)">outSide Submit</button>
