@@ -1,6 +1,9 @@
 <form #loginForm="ngForm" (ngSubmit)="loginUser(loginForm)" style="padding: 50px;">
     <div>
-        <input type="text" name="name" placeholder="Enter name" class="form-control" ngModel />
+        <input type="text" name="name" placeholder="Enter name" class="form-control" ngModel required
+            #nameField="ngModel" />
+        <span class="text-danger" *ngIf="(nameField.touched || loginForm.submitted) && nameField.invalid">Name is
+            required</span>
     </div>
     <br>
     <div>
