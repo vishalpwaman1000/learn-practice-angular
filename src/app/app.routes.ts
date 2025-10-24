@@ -12,5 +12,9 @@ export const routes: Routes = [
     {
         path: 'template-form',
         loadComponent: () => import('./form/form.component').then(m => m.FormComponent)
+    },
+    {
+        path: 'reactive-form',
+        loadComponent: () => import('./reactive-form/reactive-form.component').then(m => m.ReactiveFormComponent)
     }
 ];
